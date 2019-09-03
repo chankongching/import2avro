@@ -20,7 +20,14 @@
 					"name": "input",
 					"type": "record",
 					"fields": [
-						{"name":"index", "type":"int"}
+						{"name":"index", "type":"int"},
+						{"name":"spent_transaction_hash", "type":"string"},
+						{"name":"spent_output_index", "type":"string"},
+						{"name":"script_asm", "type":"string"},
+						{"name":"script_hex", "type":"string"},
+						{"name":"sequence", "type":"int"},
+						{"name":"required_signatures", "type":"int"},
+						{"name":"type", "type":"string"}
 					]
 				}
 			}
