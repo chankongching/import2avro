@@ -29,7 +29,29 @@ data = {
     "type": "pubkeyhash",
     "addresses": ["1JMT7Xv1MG1EtgRNVUfLuE4rni5LgzyaM"],
     "value": 20281163
-  }]
+  }],
+    "outputs": [{
+      "index": 0,
+      "script_asm": "OP_DUP OP_HASH160 7107e6b8a64f6a13bb4d145dcc2c97c91c96668a OP_EQUALVERIFY OP_CHECKSIG",
+      "script_hex": "76a9147107e6b8a64f6a13bb4d145dcc2c97c91c96668a88ac",
+      "required_signatures": 1,
+      "type": "pubkeyhash",
+      "addresses": ["1BJepfcHWkJuBG1UpriRmxqjkjSQEwkCd7"],
+      "value": 4670000
+    }, {
+      "index": 1,
+      "script_asm": "OP_DUP OP_HASH160 e7df530b4585f17eba1caf0c074eca363e2cc265 OP_EQUALVERIFY OP_CHECKSIG",
+      "script_hex": "76a914e7df530b4585f17eba1caf0c074eca363e2cc26588ac",
+      "required_signatures": 1,
+      "type": "pubkeyhash",
+      "addresses": ["1N92dAV6YcHj4gMswbbHnwc7rxk3ax1WSH"],
+      "value": 15537892
+    }],
+    "input_count": 1,
+    "output_count": 2,
+    "input_value": 20281163,
+    "output_value": 20207892,
+    "fee": 73271
 }
 
 writer.append(data)

@@ -42,6 +42,39 @@
 					]
 				}
 			}
-		}
+		},
+		{
+			"name": "outputs",
+			"type": {
+				"type": "array",
+				"items": {
+					"name": "output",
+					"type": "record",
+					"fields": [
+						{"name":"index", "type":"int"},
+						{"name":"script_asm", "type":"string"},
+						{"name":"script_hex", "type":"string"},
+						{"name":"required_signatures", "type":"int"},
+						{"name":"type", "type":"string"},
+						{
+							"name":"addresses",
+							"type": {
+								"type": "array",
+								"items": {
+									"name": "address",
+									"type": "string"
+								}
+						}
+						},
+						{"name":"value", "type":"long"}
+					]
+				}
+			}
+		},
+		{"name":"input_count", "type":"int"},
+		{"name":"output_count", "type":"int"},
+		{"name":"input_value", "type":"long"},
+		{"name":"output_value", "type":"long"},
+		{"name":"fee", "type":"int"}
 	]
 }
