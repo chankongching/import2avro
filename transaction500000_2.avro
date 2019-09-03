@@ -22,7 +22,8 @@
 					"fields": [
 						{"name":"index", "type":"int"},
 						{"name":"spent_transaction_hash", "type":"string"},
-						{"name":"spent_output_index", "type":"int"}
+						{"name":"spent_output_index", "type":"int"},
+						{"name":"script_asm", "type":"string"}
 					]
 				}
 			}
