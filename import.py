@@ -13,17 +13,21 @@ fh = open('enriched_transactions.json')
 while True:
     # read line
     line = fh.readline()
-    # transform into json
-    data = json.loads(line)
     # check if line is not empty
     if not line:
         print("line is not able to jsonify, line = " + line)
         continue
+    # transform into json
+    try:
+        data = json.loads(line)
+    except Exception, e:
+        print("line = " + line)
+        print("Load to json error: " + str(e))
     try:
         # write into DB
         writer.append(data)
     except Exception, e:
-        print("Failed to write data with error msg: " + str(e))
+        print("Failed to write db: " + str(e))
 fh.close()
 writer.close()
 
