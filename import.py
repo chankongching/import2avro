@@ -13,17 +13,15 @@ fh = open('enriched_transactions.json')
 while True:
     # read line
     line = fh.readline()
-    # in python 2, print line
-    # in python 3
-    print(line)
+    # transform into json
+    data = json.loads(line)
+    # write into DB
+    writer.append(data)
     # check if line is not empty
     if not line:
         break
 fh.close()
-
-writer.append(data)
 writer.close()
-
 
 # # Reading data
 # reader = DataFileReader(open("transaction2.avro", "rb"), DatumReader())
