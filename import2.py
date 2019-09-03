@@ -26,7 +26,9 @@ data = {
     "script_hex": "47304402206d077981cdbd88578439a18653ae9ded88e73f903db8dfebd9a97389a33a43a502201bfe9443fe6550c36016c26c9e459af44bcfc6e4fbdbb0b7fedbf93904c7325e0121034af10276b44b10c31e4dcd5f6e6184a33151abcee75bcb369b175eaa349cf550",
     "sequence": 4294967294,
     "required_signatures": 1,
-    "type": "pubkeyhash"
+    "type": "pubkeyhash",
+    "addresses": ["1JMT7Xv1MG1EtgRNVUfLuE4rni5LgzyaM"],
+    "value": 20281163
   }]
 }
 

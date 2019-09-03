@@ -27,7 +27,18 @@
 						{"name":"script_hex", "type":"string"},
 						{"name":"sequence", "type":"long"},
 						{"name":"required_signatures", "type":"int"},
-						{"name":"type", "type":"string"}
+						{"name":"type", "type":"string"},
+						{
+							"name":"addresses",
+							"type": {
+								"type": "array",
+								"items": {
+									"name": "address",
+									"type": "string"
+								}
+						}
+						},
+						{"name":"value", "type":"long"}
 					]
 				}
 			}
