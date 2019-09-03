@@ -17,10 +17,10 @@ data = {
   "block_number": 500000,
   "block_hash": "00000000000000000024fb37364cbf81fd49cc2d51c09c75c35433c3a1945d04",
   "block_timestamp": 1513622125,
-  "is_coinbase": false,
+  "is_coinbase": False,
   "inputs": [{
     "index": 0
-  }]      
+  }]
 }
 
 writer.append(data)
