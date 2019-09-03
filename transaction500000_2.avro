@@ -12,6 +12,5 @@
 	    {"name": "block_hash", "type": "string"},
 	    {"name": "block_timestamp", "type": "int"},
 	    {"name": "is_coinbase", "type": "boolean" }
-		}
 	]
 }
