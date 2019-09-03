@@ -14,18 +14,16 @@ while True:
     # read line
     line = fh.readline()
     # transform into json
+    data = json.loads(line)
     try:
-        data = json.loads(line)
-        try:
-            # write into DB
-            writer.append(data)
-        except Exception, e:
-            print("Failed to write data with error msg: " + str(e))
-    except:
-        print("line is not able to jsonify, line = " + line)
+        # write into DB
+        writer.append(data)
+    except Exception, e:
+        print("Failed to write data with error msg: " + str(e))
+
     # check if line is not empty
     if not line:
-        break
+        print("line is not able to jsonify, line = " + line)
 fh.close()
 writer.close()
 
