@@ -1,5 +1,5 @@
 {
-	"namespace": "transaction500000.avro",
+	"namespace": "transaction500000_2.avro",
 	"type": "record",
 	"name": "transaction",
 	"fields": [
