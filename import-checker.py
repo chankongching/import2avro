@@ -10,68 +10,90 @@ writer = DataFileWriter(open("transaction-checker.avro", "wb"), DatumWriter(), s
 
 # Sample data
 data = {
-  'block_number': 127630,
+  'block_number': 157077,
   'lock_time': 0,
-  'fee': 0,
-  'hash': 'cee16a9b222f636cd27d734da0a131cee5dd7a1d09cb5f14f4d1330b22aaa38e',
+  'fee': 4294967296,
+  'hash': '371fdf9eddba61b624e63f67c072a49d3e52f7ca835668f9bcce2b11610b5357',
   'inputs': [{
     'index': 0,
-    'script_asm': '304502207432778ec1345015b0c67eece490e38c792efadc3e91d42dfe57f26ac3eb4d870221009160f5c6e69d7d31fd47efb52c3f12a4c6210104ca9136d587720725d8c5d2c9[ALL] 043a18eb7431c9fc130c49baf0e4d0d75d6037ae1934b546a4c86b626d66a635fc4144b1daf9fbfdae156a1b64ef17aaa01c0bba64a365400be90c2f8c9938ba3a',
-    'addresses': ['13tgr4Z3xeYqg4WAX6KRkoUMmK8iWsQ2a'],
+    'script_asm': '304402206a93bda33ddc0b399552781c612244e548c7be80b004481ca34b1b212be40a7b022027a0fa8c864d9d3e95c53105270977beb4975182f5dd2978ac744d8d0270bb3e[ALL] 044329536fa5271dfb7094691ff93c434d665519f72055f0a0d19d43851fa0178a07bc001033e33c363fab8d6d20494f6ba789d753bc3150bf649142d36ba3e04d',
+    'addresses': ['15kDcr9wDhZmvPufKP7vYyELSoLg4bKbAR'],
     'sequence': 4294967295,
-    'value': 1179641,
-    'script_hex': '48304502207432778ec1345015b0c67eece490e38c792efadc3e91d42dfe57f26ac3eb4d870221009160f5c6e69d7d31fd47efb52c3f12a4c6210104ca9136d587720725d8c5d2c90141043a18eb7431c9fc130c49baf0e4d0d75d6037ae1934b546a4c86b626d66a635fc4144b1daf9fbfdae156a1b64ef17aaa01c0bba64a365400be90c2f8c9938ba3a',
+    'value': 210388607,
+    'script_hex': '47304402206a93bda33ddc0b399552781c612244e548c7be80b004481ca34b1b212be40a7b022027a0fa8c864d9d3e95c53105270977beb4975182f5dd2978ac744d8d0270bb3e0141044329536fa5271dfb7094691ff93c434d665519f72055f0a0d19d43851fa0178a07bc001033e33c363fab8d6d20494f6ba789d753bc3150bf649142d36ba3e04d',
     'required_signatures': 1,
-    'spent_transaction_hash': '435bd1e992837dee55558b0b3f142af3c931320f51edf6a4a02ad5d8755bbf74',
+    'spent_transaction_hash': 'a5317507758745128489664e60c7946272702ab944e473decdaa396853f28b6a',
     'type': 'pubkeyhash',
-    'spent_output_index': 0
+    'spent_output_index': 2
   }, {
     'index': 1,
-    'script_asm': '3046022100cca0ff06394dccae15261816715b9d23b3fd5d1fb62db6e3b7d05f35158b3c33022100e516fb366dc812b8765c0f7339f227b482c5fdd734a01528b9fd090e843ab677[ALL] 04b70d8e243b24a0c042f4d120ce1c655556292e72d66e395620774e19ef3717f2bb1611eda029e376b2bbd33820f20429ee1b459e28607b992d2214a42e904836',
-    'addresses': ['1FzLZkwAWJcTBE9E7fox2G5cK3VjNc8WcV'],
+    'script_asm': '3044022049266357f3a3d589c21970221eb295f9f2bd76ed51792ee12b1b814a4d8d62bb02209cfa26dc4fc10ab8721e251f07081567743958178cd9bc953768222968325aff01 044329536fa5271dfb7094691ff93c434d665519f72055f0a0d19d43851fa0178a07bc001033e33c363fab8d6d20494f6ba789d753bc3150bf649142d36ba3e04d',
+    'addresses': ['15kDcr9wDhZmvPufKP7vYyELSoLg4bKbAR'],
     'sequence': 4294967295,
-    'value': 500000000,
-    'script_hex': '493046022100cca0ff06394dccae15261816715b9d23b3fd5d1fb62db6e3b7d05f35158b3c33022100e516fb366dc812b8765c0f7339f227b482c5fdd734a01528b9fd090e843ab677014104b70d8e243b24a0c042f4d120ce1c655556292e72d66e395620774e19ef3717f2bb1611eda029e376b2bbd33820f20429ee1b459e28607b992d2214a42e904836',
+    'value': 698220000,
+    'script_hex': '473044022049266357f3a3d589c21970221eb295f9f2bd76ed51792ee12b1b814a4d8d62bb02209cfa26dc4fc10ab8721e251f07081567743958178cd9bc953768222968325aff0141044329536fa5271dfb7094691ff93c434d665519f72055f0a0d19d43851fa0178a07bc001033e33c363fab8d6d20494f6ba789d753bc3150bf649142d36ba3e04d',
     'required_signatures': 1,
-    'spent_transaction_hash': 'cef6b3726370dc9a6cb29d34d7971c40433e11fe8277f996d3936f95b2fabdb9',
+    'spent_transaction_hash': 'e7b3d1b7a4363c81eb36c9221701b2eedacff3c7948ed944db9483dc68349bb1',
+    'type': 'pubkeyhash',
+    'spent_output_index': 1
+  }, {
+    'index': 2,
+    'script_asm': '30440220499d8a68bc404d0548acabfaa254322782ccabd86858c0e5b28cb7a2f6a5f6010220cec5e9a6229efc503f7c14d0aa92b3e5cc2248aac15b1197ca99f4956e0e295401 044329536fa5271dfb7094691ff93c434d665519f72055f0a0d19d43851fa0178a07bc001033e33c363fab8d6d20494f6ba789d753bc3150bf649142d36ba3e04d',
+    'addresses': ['15kDcr9wDhZmvPufKP7vYyELSoLg4bKbAR'],
+    'sequence': 4294967295,
+    'value': 3594420000,
+    'script_hex': '4730440220499d8a68bc404d0548acabfaa254322782ccabd86858c0e5b28cb7a2f6a5f6010220cec5e9a6229efc503f7c14d0aa92b3e5cc2248aac15b1197ca99f4956e0e29540141044329536fa5271dfb7094691ff93c434d665519f72055f0a0d19d43851fa0178a07bc001033e33c363fab8d6d20494f6ba789d753bc3150bf649142d36ba3e04d',
+    'required_signatures': 1,
+    'spent_transaction_hash': 'b942484b190b715eba44ccfc7f4399f5c3b463924c375088dabe1eb596579ca6',
+    'type': 'pubkeyhash',
+    'spent_output_index': 1
+  }, {
+    'index': 3,
+    'script_asm': '30440220c89692dae8489d1bc947ac630e114055067f3db8637e3f1d37eef7815501a9e90220dbd9fd6500c20af8db4642b5a6b829a4f37c2ac94f17a37a361c25861ec4348901 04657b2d0577195047940b26ed8d5c59cb8d3c6feb6c571192dd3ecbe8a544bfed43a3bc44f06d5bbdfdb1b86854d894f77f22d7efe40e1ae7d1fa338581ad2692',
+    'addresses': ['18acFQe4qGB7wEhApeSHcx49Aeh76y137B'],
+    'sequence': 4294967295,
+    'value': 1781240000,
+    'script_hex': '4730440220c89692dae8489d1bc947ac630e114055067f3db8637e3f1d37eef7815501a9e90220dbd9fd6500c20af8db4642b5a6b829a4f37c2ac94f17a37a361c25861ec43489014104657b2d0577195047940b26ed8d5c59cb8d3c6feb6c571192dd3ecbe8a544bfed43a3bc44f06d5bbdfdb1b86854d894f77f22d7efe40e1ae7d1fa338581ad2692',
+    'required_signatures': 1,
+    'spent_transaction_hash': '8719c37e47b522b5af1a4de80127d4278b2376a339313027741d636b187b77c5',
     'type': 'pubkeyhash',
     'spent_output_index': 1
   }],
-  'block_timestamp': 1306753419,
+  'block_timestamp': 1323616207,
   'output_count': 3,
-  'output_value': 501179641,
-  'block_hash': '0000000000001d39eac1016f91da0ebf79714e2e425e7b8f9c188635df2fca58',
-  'input_value': 501179641,
+  'output_value': 1989301311,
+  'block_hash': '00000000000004530bff812eddb78db46a076b1ff9b5d68f38d9204fa88ceb32',
+  'input_value': 6284268607,
   'version': 1,
-  'input_count': 2,
+  'input_count': 4,
   'outputs': [{
     'index': 0,
-    'script_asm': 'OP_DUP OP_HASH160 baa72d8650baec634cdc439c1b84a982b2e596b2 OP_EQUALVERIFY OP_CHECKSIG OP_NOP',
-    'addresses': ['nonstandardb464ff8f77e8058539b14759da26583232ecedd6'],
-    'script_hex': '76a914baa72d8650baec634cdc439c1b84a982b2e596b288ac61',
-    'value': 1175545,
-    'required_signatures': None,
-    'type': 'nonstandard'
+    'script_asm': 'OP_DUP OP_HASH160 9a959609b75bc50c3c136b64f7b12c6ab27d7efe OP_EQUALVERIFY OP_CHECKSIG',
+    'addresses': ['1F6NFxzNsHpyaKRtyHB8JMsn5ccxQqDpEQ'],
+    'script_hex': '76a9149a959609b75bc50c3c136b64f7b12c6ab27d7efe88ac',
+    'value': 705032704,
+    'required_signatures': 1,
+    'type': 'pubkeyhash'
   }, {
     'index': 1,
-    'script_asm': 'OP_DUP OP_HASH160 a35bc692e248dbf84f642b6998a40521562054d6 OP_EQUALVERIFY OP_CHECKSIG',
-    'addresses': ['1Ftm5xMJNgqnthfgbJXpApukx3HBbrTC7R'],
-    'script_hex': '76a914a35bc692e248dbf84f642b6998a40521562054d688ac',
-    'value': 500000000,
+    'script_asm': 'OP_DUP OP_HASH160 641ad5051edd97029a003fe9efb29359fcee409d OP_EQUALVERIFY OP_CHECKSIG',
+    'addresses': ['1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq'],
+    'script_hex': '76a914641ad5051edd97029a003fe9efb29359fcee409d88ac',
+    'value': 50000000,
     'required_signatures': 1,
     'type': 'pubkeyhash'
   }, {
     'index': 2,
-    'script_asm': 'OP_DUP OP_HASH160 6300bf4c5c2a724c280b893807afb976ec78a92b OP_EQUALVERIFY OP_CHECKSIG',
-    'addresses': ['1A2UnusrwYr7DbiFbFesRKrbQMiYkj6E84'],
-    'script_hex': '76a9146300bf4c5c2a724c280b893807afb976ec78a92b88ac',
-    'value': 4096,
+    'script_asm': 'OP_DUP OP_HASH160 340cec2a26413ec235c114c0216f4cb978202825 OP_EQUALVERIFY OP_CHECKSIG',
+    'addresses': ['15kDcr9wDhZmvPufKP7vYyELSoLg4bKbAR'],
+    'script_hex': '76a914340cec2a26413ec235c114c0216f4cb97820282588ac',
+    'value': 1234268607,
     'required_signatures': 1,
     'type': 'pubkeyhash'
   }],
   'is_coinbase': False,
-  'virtual_size': 474,
-  'size': 474
+  'virtual_size': 828,
+  'size': 828
 }
 
 # write into DB
