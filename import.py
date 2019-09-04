@@ -8,9 +8,15 @@ schema = avro.schema.parse(open("transaction.avsc", "rb").read())
 
 writer = DataFileWriter(open("transaction.avro", "wb"), DatumWriter(), schema)
 
+# Adding counter for trouble shooting
+count = 0
+
 # file handle fh
 fh = open('enriched_transactions.json')
 while True:
+    # line number:
+    print("line number: " + str(count))
+    count = count+1
     # read line
     line = fh.readline()
     # check if line is not empty
