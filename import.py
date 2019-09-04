@@ -15,14 +15,14 @@ count = 0
 fh = open('enriched_transactions.json')
 while True:
     # line number:
-    print("line number: " + str(count))
+    # print("line number: " + str(count))
     count = count+1
     # read line
     line = fh.readline()
     # check if line is not empty
     if not line:
-        print(str(datetime.datetime.now()) + ": Not a line = " + line)
-        continue
+        print(str(datetime.datetime.now()) + ": Line processed " + line)
+        break
     # transform into json
     try:
         data = json.loads(line)
