@@ -1,0 +1,80 @@
+{
+	"namespace": "transaction.avro",
+	"type": "record",
+	"name": "transaction",
+	"fields": [
+    {"name": "hash", "type": "string"},
+    {"name": "size",  "type": "int"},
+    {"name": "virtual_size", "type": "int"},
+    {"name": "version", "type": "int"},
+    {"name": "lock_time", "type": "int"},
+    {"name": "block_number", "type": "int"},
+    {"name": "block_hash", "type": "string"},
+    {"name": "block_timestamp", "type": "int"},
+    {"name": "is_coinbase", "type": "boolean" },
+		{
+			"name": "inputs",
+			"type": {
+				"type": "array",
+				"items": {
+					"name": "input",
+					"type": "record",
+					"fields": [
+						{"name":"index", "type":"int"},
+						{"name":"spent_transaction_hash", "type":"string"},
+						{"name":"spent_output_index", "type":"int"},
+						{"name":"script_asm", "type":"string"},
+						{"name":"script_hex", "type":"string"},
+						{"name":"sequence", "type":"long"},
+						{"name":"required_signatures", "type":"int"},
+						{"name":"type", "type":"string"},
+						{
+							"name":"addresses",
+							"type": {
+								"type": "array",
+								"items": {
+									"name": "address",
+									"type": "string"
+								}
+						}
+						},
+						{"name":"Value", "type":"long"}
+					]
+				}
+			}
+		},
+		{
+			"name": "outputs",
+			"type": {
+				"type": "array",
+				"items": {
+					"name": "output",
+					"type": "record",
+					"fields": [
+						{"name":"index", "type":"int"},
+						{"name":"script_asm", "type":"string"},
+						{"name":"script_hex", "type":"string"},
+						{"name":"required_signatures", "type": ["null", "int"]},
+						{"name":"type", "type":"string"},
+						{
+							"name":"addresses",
+							"type": {
+								"type": "array",
+								"items": {
+									"name": "address",
+									"type": "string"
+								}
+						}
+						},
+						{"name":"Value", "type":"long"}
+					]
+				}
+			}
+		},
+		{"name":"input_count", "type":"int"},
+		{"name":"output_count", "type":"int"},
+		{"name":"input_Value", "type":"long"},
+		{"name":"output_Value", "type":"long"},
+		{"name":"fee", "type":"int"}
+	]
+}
