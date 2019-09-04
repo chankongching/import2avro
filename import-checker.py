@@ -56,7 +56,6 @@ data = {
 }
 # write into DB
 writer.append(data)
-fh.close()
 writer.close()
 
 # # Reading data
