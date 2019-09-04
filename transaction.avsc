@@ -75,6 +75,6 @@
 		{"name":"output_count", "type":"int"},
 		{"name":"input_value", "type":"long"},
 		{"name":"output_value", "type":"long"},
-		{"name":"fee", "type":"int"}
+		{"name":"fee", "type":"long"}
 	]
 }
